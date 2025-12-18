@@ -11,7 +11,8 @@
     "var_global": "#9aa7d6",
     "var_local": "#fcf5c7",
     "property": "#ff6aad",
-    "numeric": "#fcf5c7"
+    "numeric": "#fcf5c7",
+    "parameter": "#ffa348"
   },
   "colors": {
     "editor.background": "#252526",
@@ -399,10 +400,20 @@
     {
       "name": "JS Global Variables",
       "scope": [
-        "variable.other.object.js"
+        "variable.other.object.js",
+        "variable.other.constant.js"
       ],
       "settings": {
         "foreground": "#9aa7d6"
+      }
+    },
+    {
+      "name": "JS Types",
+      "scope": [
+        "entity.name.type.js"
+      ],
+      "settings": {
+        "foreground": "#cf6eff"
       }
     },
     {
@@ -488,6 +499,73 @@
       ],
       "settings": {
         "foreground": "#729fcf"
+      }
+    },
+    {
+      "name": "============== Qml =============="
+    },
+    {
+      "name": "Qml - Module",
+      "scope": [
+        "entity.name.section.import.module.qml",
+        "constant.numeric.import.version.qml"
+      ],
+      "settings": {
+        "foreground": "#fcf5c7"
+      }
+    },
+    {
+      "name": "Qml - Type",
+      "scope": [
+        "variable.parameter.attr-object.type.qml",
+        "storage.type.prop-custom.type.qml",
+        "entity.name.type.object.qml",
+        "entity.name.type.qml",
+        "entity.name.type.signal.param-type.qml",
+        "entity.name.type.import.type.qml",
+        "entity.name.type.on-prop.qml",
+        "entity.name.type.on-prop.signal.param-type.qml"
+      ],
+      "settings": {
+        "foreground": "#cf6eff"
+      }
+    },
+    {
+      "name": "Qml - Property",
+      "scope": [
+        "variable.parameter.attr-expr.qml",
+        "variable.parameter.attr-list.qml",
+        "variable.parameter.attr-object.qml",
+        "variable.parameter.attr-string.qml",
+        "variable.parameter.attr-block.qml",
+        "variable.parameter.on-prop.prop.qml"
+      ],
+      "settings": {
+        "foreground": "#ff6aad"
+      }
+    },
+    {
+      "name": "Qml - Function",
+      "scope": [
+        "entity.name.function.qml",
+        "entity.name.function.signal.name.qml"
+      ],
+      "settings": {
+        "foreground": "#74bbfb"
+      }
+    },
+    {
+      "name": "Qml - Variable",
+      "scope": [
+        "variable.parameter.signal.param-name.qml",
+        "source.qml variable.parameter.js",
+        "source.qml variable.other.readwrite.js",
+        "source.qml variable.other.object.js",
+        "source.qml variable.other.constant.property.js",
+        "source.qml variable.other.constant.js"
+      ],
+      "settings": {
+        "foreground": "#fcf5c7"
       }
     }
   ],
