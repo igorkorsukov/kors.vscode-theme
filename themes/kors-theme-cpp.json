@@ -15,7 +15,7 @@
   },
   "colors": {
     "editor.background": "#252526",
-    "editor.foreground": "#eeffff"
+    "editor.foreground": "#eeeeec"
   },
   "semanticHighlighting": true,
   "semanticTokenColors": {
@@ -66,6 +66,35 @@
       ],
       "settings": {
         "foreground": "#45c6d6"
+      }
+    },
+    {
+      "name": "Tag",
+      "scope": [
+        "entity.name.tag",
+        "punctuation.definition.tag.begin",
+        "punctuation.definition.tag.end"
+      ],
+      "settings": {
+        "foreground": "#cf6eff"
+      }
+    },
+    {
+      "name": "Tag - Attribute",
+      "scope": [
+        "entity.other.attribute-name"
+      ],
+      "settings": {
+        "foreground": "#ff6aad"
+      }
+    },
+    {
+      "name": "Attribute - Assign",
+      "scope": [
+        "punctuation.separator.key-value"
+      ],
+      "settings": {
+        "foreground": "#d6bb9a"
       }
     },
     {
@@ -409,15 +438,6 @@
     },
     {
       "name": "============== Markdown =============="
-    },
-    {
-      "name": "Markdown - Plain",
-      "scope": [
-        "text.html.markdown"
-      ],
-      "settings": {
-        "foreground": "#eeeeec"
-      }
     },
     {
       "name": "Markdown - Heading",
