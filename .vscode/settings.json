@@ -1,0 +1,10 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.(src.json)$",
+                "cmd": "node ${workspaceFolder}/tools/preprocessor.js '${file}'",
+            }
+        ]
+    }
+}
