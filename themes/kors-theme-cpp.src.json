@@ -58,6 +58,17 @@
 			}
 		},
 		{
+			"name": "Keyword, Storage",
+			"scope": [
+				"keyword",
+				"storage.type",
+				"storage.modifier"
+			],
+			"settings": {
+				"foreground": "$palette.keyword"
+			}
+		},
+		{
 			"name": "============== C++ ==============" 
 		},
 				{
@@ -395,29 +406,73 @@
 			"settings": {
 				"foreground": "$palette.property"
 			}
+		},
+		{
+			"name": "============== Markdown ==============" 
+		},
+		{
+			"name": "Markdown - Plain",
+			"scope": [
+				"text.html.markdown"
+			],
+			"settings": {
+				"foreground": "#eeeeec"
+			}
+		},
+		{
+			"name": "Markdown - Heading",
+			"scope": [
+				"punctuation.definition.heading.markdown",
+				"entity.name.section.markdown"
+			],
+			"settings": {
+				"foreground": "#729fcf",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown - Block",
+			"scope": [
+				"markup.inline.raw.string.markdown",
+				"markup.fenced_code.block.markdown"
+			],
+			"settings": {
+				"foreground": "#e9b96e"
+			}
+		},
+		{
+			"name": "Markdown - Bolt",
+			"scope": [
+				"markup.bold.markdown"
+			],
+			"settings": {
+				"foreground": "#e9b96e",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown - List",
+			"scope": [
+				"punctuation.definition.list.begin.markdown"
+			],
+			"settings": {
+				"foreground": "#729fcf",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown - Link",
+			"scope": [
+				"string.other.link.title.markdown",
+				"markup.underline.link.markdown"
+			],
+			"settings": {
+				"foreground": "#729fcf"
+			}
 		}
+		
 	],
 	"tokenColors__": [
-		{
-			"name": "Comment",
-			"scope": [
-				"comment",
-				"punctuation.definition.comment"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#a8abb0"
-			}
-		},
-		{
-			"name": "Colors",
-			"scope": [
-				"constant.other.color"
-			],
-			"settings": {
-				"foreground": "#ffffff"
-			}
-		},
 		{
 			"name": "Invalid",
 			"scope": [
@@ -426,17 +481,6 @@
 			],
 			"settings": {
 				"foreground": "#FF5370"
-			}
-		},
-		{
-			"name": "Keyword, Storage",
-			"scope": [
-				"keyword",
-				"storage.type",
-				"storage.modifier"
-			],
-			"settings": {
-				"foreground": "#C792EA"
 			}
 		},
 		{
@@ -468,19 +512,6 @@
 			],
 			"settings": {
 				"foreground": "#f07178"
-			}
-		},
-		{
-			"name": "Function, Special Method",
-			"scope": [
-				"entity.name.function",
-				"meta.function-call",
-				"variable.function",
-				"support.function",
-				"keyword.other.special-method"
-			],
-			"settings": {
-				"foreground": "#82AAFF"
 			}
 		},
 		{
@@ -575,16 +606,6 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#82AAFF"
-			}
-		},
-		{
-			"name": "meta.method.js",
-			"scope": [
-				"meta.class-method.js entity.name.function.js",
-				"variable.function.constructor"
-			],
-			"settings": {
 				"foreground": "#82AAFF"
 			}
 		},
@@ -703,45 +724,7 @@
 				"foreground": "#FF5370"
 			}
 		},
-		{
-			"name": "Markdown - Plain",
-			"scope": [
-				"text.html.markdown",
-				"punctuation.definition.list_item.markdown"
-			],
-			"settings": {
-				"foreground": "#EEFFFF"
-			}
-		},
-		{
-			"name": "Markdown - Markup Raw Inline",
-			"scope": [
-				"text.html.markdown markup.inline.raw.markdown"
-			],
-			"settings": {
-				"foreground": "#C792EA"
-			}
-		},
-		{
-			"name": "Markdown - Markup Raw Inline Punctuation",
-			"scope": [
-				"text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown"
-			],
-			"settings": {
-				"foreground": "#65737E"
-			}
-		},
-		{
-			"name": "Markdown - Heading",
-			"scope": [
-				"markdown.heading",
-				"markup.heading | markup.heading entity.name",
-				"markup.heading.markdown punctuation.definition.heading.markdown"
-			],
-			"settings": {
-				"foreground": "#C3E88D"
-			}
-		},
+
 		{
 			"name": "Markup - Italic",
 			"scope": [
