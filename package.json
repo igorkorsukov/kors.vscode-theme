@@ -1,10 +1,11 @@
 {
-  "name": "kors.vscode-theme",
-  "displayName": "Kors Theme C++",
-  "description": "Theme for C++",
+  "name": "vscode-theme",
+  "displayName": "Kors Theme",
+  "description": "Theme for C++, Js, Json, Markdown, Qml, Html",
   "version": "0.0.1",
+  "publisher": "kors",
   "engines": {
-    "vscode": "^1.107.0"
+    "vscode": "^1.100.0"
   },
   "categories": [
     "Themes"
@@ -12,7 +13,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Kors Theme C++",
+        "label": "Kors Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/kors-theme-cpp.json"
       }
