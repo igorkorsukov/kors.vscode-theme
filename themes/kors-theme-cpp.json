@@ -271,6 +271,55 @@
       }
     },
     {
+      "name": "============== CMake =============="
+    },
+    {
+      "name": "CMake Keyword",
+      "scope": [
+        "support.function.cmake",
+        "support.function.commandProperty.cmake",
+        "support.type.targetProperty.cmake",
+        "support.type.cacheProperty.cmake",
+        "support.type.testProperty.cmake",
+        "support.type.sourceFile.cmake",
+        "support.type.system.cmake"
+      ],
+      "settings": {
+        "foreground": "#45c6d6"
+      }
+    },
+    {
+      "name": "CMake Variable",
+      "scope": [
+        "support.type.provideInfo.cmake",
+        "support.type.change.cmake",
+        "support.type.build.cmake",
+        "variable.other.cmake",
+        "string.unquoted.cmake"
+      ],
+      "settings": {
+        "foreground": "#ffa348"
+      }
+    },
+    {
+      "name": "CMake Primitive",
+      "scope": [
+        "constant.language.boolean.cmake"
+      ],
+      "settings": {
+        "foreground": "#eecf22"
+      }
+    },
+    {
+      "name": "CMake Function",
+      "scope": [
+        "entity.name.function.cmake"
+      ],
+      "settings": {
+        "foreground": "#74bbfb"
+      }
+    },
+    {
       "name": "============== Json =============="
     },
     {
