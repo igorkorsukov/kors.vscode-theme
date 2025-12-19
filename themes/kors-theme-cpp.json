@@ -85,6 +85,33 @@
       }
     },
     {
+      "name": "Function",
+      "scope": [
+        "entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#74bbfb"
+      }
+    },
+    {
+      "name": "Command",
+      "scope": [
+        "entity.name.command"
+      ],
+      "settings": {
+        "foreground": "#3f9cd6"
+      }
+    },
+    {
+      "name": "Parameter",
+      "scope": [
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#ffa348"
+      }
+    },
+    {
       "name": "Tag",
       "scope": [
         "entity.name.tag",
@@ -311,15 +338,6 @@
       }
     },
     {
-      "name": "CMake Function",
-      "scope": [
-        "entity.name.function.cmake"
-      ],
-      "settings": {
-        "foreground": "#74bbfb"
-      }
-    },
-    {
       "name": "============== Json =============="
     },
     {
@@ -478,15 +496,6 @@
       ],
       "settings": {
         "foreground": "#cf6eff"
-      }
-    },
-    {
-      "name": "JS Functions",
-      "scope": [
-        "entity.name.function.js"
-      ],
-      "settings": {
-        "foreground": "#74bbfb"
       }
     },
     {
@@ -698,6 +707,61 @@
       ],
       "settings": {
         "foreground": "#fcf5c7"
+      }
+    },
+    {
+      "name": "============== Shell =============="
+    },
+    {
+      "name": "Shell - Keywords",
+      "scope": [
+        "support.function.builtin.shell",
+        "punctuation.definition.subshell.single.shell",
+        "punctuation.definition.variable.shell",
+        "punctuation.definition.string.heredoc.delimiter.shell"
+      ],
+      "settings": {
+        "foreground": "#45c6d6"
+      }
+    },
+    {
+      "name": "Shell - Variables",
+      "scope": [
+        "variable.other.assignment.shell",
+        "variable.other.normal.shell",
+        "string.regexp.unquoted.shell",
+        "meta.scope.logical-expression.shell",
+        "variable.other.for.shell"
+      ],
+      "settings": {
+        "foreground": "#ffa348"
+      }
+    },
+    {
+      "name": "Shell - Numeric",
+      "scope": [
+        "constant.numeric.integer.shell"
+      ],
+      "settings": {
+        "foreground": "#fcf5c7"
+      }
+    },
+    {
+      "name": "Shell - Parameter",
+      "scope": [
+        "string.unquoted.argument.shell"
+      ],
+      "settings": {
+        "foreground": "#ffa348"
+      }
+    },
+    {
+      "name": "Shell - Operator",
+      "scope": [
+        "punctuation.separator.statement.and.shell"
+      ],
+      "settings": {
+        "foreground": "#d6bb9a"
       }
     }
   ]
