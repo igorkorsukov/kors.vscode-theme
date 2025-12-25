@@ -36,6 +36,7 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"macro": "$palette.macro",
+		"variable.global": "$palette.var_global",
 		"variable.fileScope": "$palette.var_global",
 		"variable.classScope": "$palette.var_global",
 		"variable.declaration": "$palette.var_global",
@@ -61,6 +62,7 @@
 			"name": "============== Basic =============="
 		},
 		{
+			"name": "Comment",
 			"scope": "comment",
 			"settings": {
 				"foreground": "$palette.comment",
@@ -68,9 +70,39 @@
 			}
 		},
 		{
+			"name": "Documentation",
+			"scope": [
+				"storage.type.class.doxygen",
+				"storage.type.class.jsdoc"
+			],
+			"settings": {
+				"foreground": "$palette.strong"
+			}
+		},
+		{
+			"name": "String",
 			"scope": "string",
 			"settings": {
 				"foreground": "$palette.string"
+			}
+		},
+		{
+			"name": "Numeric",
+			"scope": [
+				"constant.numeric"
+			],
+			"settings": {
+				"foreground": "$palette.numeric"
+			}
+		},
+		{
+			"name": "Numeric",
+			"scope": [
+				"constant.numeric",
+				"keyword.other.unit.hexadecimal"
+			],
+			"settings": {
+				"foreground": "$palette.numeric"
 			}
 		},
 		{
@@ -82,6 +114,35 @@
 			],
 			"settings": {
 				"foreground": "$palette.keyword"
+			}
+		},
+		{
+			"name": "Primitive",
+			"scope": [
+				"storage.type.built-in.primitive"
+			],
+			"settings": {
+				"foreground": "$palette.primitive"
+			}
+		},
+		{
+			"name": "Namespace",
+			"scope": [
+				"entity.name.namespace",
+				"entity.name.scope-resolution"
+			],
+			"settings": {
+				"foreground": "$palette.type"
+			}
+		},
+		{
+			"name": "Types",
+			"scope": [
+				"entity.name.type.class",
+				"entity.name.type"
+			],
+			"settings": {
+				"foreground": "$palette.type"
 			}
 		},
 		{
@@ -100,6 +161,24 @@
 			],
 			"settings": {
 				"foreground": "$palette.preprocessor"
+			}
+		},
+		{
+			"name": "Local variables",
+			"scope": [
+				"variable.other.object"
+			],
+			"settings": {
+				"foreground": "$palette.var_local"
+			}
+		},
+		{
+			"name": "Properties",
+			"scope": [
+				"variable.other.property"
+			],
+			"settings": {
+				"foreground": "$palette.property"
 			}
 		},
 		{
@@ -256,8 +335,9 @@
 		{
 			"name": "C++ Built-in Types",
 			"scope": [
-				"storage.type.built-in.primitive.cpp",
-				"support.type.built-in.posix-reserved.cpp"
+				"support.type.built-in.posix-reserved.cpp",
+				"constant.language.false.cpp",
+				"constant.language.true.cpp"
 			],
 			"settings": {
 				"foreground": "$palette.primitive"
@@ -270,6 +350,24 @@
 			],
 			"settings": {
 				"foreground": "$palette.numeric"
+			}
+		},
+		{
+			"name": "C++ Types",
+			"scope": [
+				"storage.type.integral.char16_t.cpp"
+			],
+			"settings": {
+				"foreground": "$palette.type"
+			}
+		},
+		{
+			"name": "C++ Parameter",
+			"scope": [
+				"entity.name.type.parameter.cpp"
+			],
+			"settings": {
+				"foreground": "$palette.parameter"
 			}
 		},
 		{
@@ -296,7 +394,7 @@
 			"settings": {
 				"foreground": "$palette.preprocessor"
 			}
-		},
+		}, 
 		{
 			"name": "============== CMake =============="
 		},
@@ -731,7 +829,8 @@
 				"variable.other.normal.shell",
 				"string.regexp.unquoted.shell",
 				"meta.scope.logical-expression.shell",
-				"variable.other.for.shell"
+				"variable.other.for.shell",
+				"constant.other.option"
 			],
 			"settings": {
 				"foreground": "$palette.parameter"

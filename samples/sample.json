@@ -1,0 +1,45 @@
+{
+    "level0": {
+        "key_s": "string",
+        "key_n": 42,
+        "key_t": true,
+        "key_f": false,
+        "key_a": [],
+        "level1": {
+            "key_s": "string",
+            "key_n": 42,
+            "key_t": true,
+            "key_f": false,
+            "key_a": [],
+            "level2": {
+                "key_s": "string",
+                "key_n": 42,
+                "key_t": true,
+                "key_f": false,
+                "key_a": [],
+                "level3": {
+                    "key_s": "string",
+                    "key_n": 42,
+                    "key_t": true,
+                    "key_f": false,
+                    "key_a": [],
+                    "level4": {
+                        "key_s": "string",
+                        "key_n": 42,
+                        "key_t": true,
+                        "key_f": false,
+                        "key_a": [],
+                        "level5": {
+                            "key_s": "string",
+                            "key_n": 42,
+                            "key_t": true,
+                            "key_f": false,
+                            "key_a": [],
+                            "level6": {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -36,6 +36,7 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "macro": "#74bbfb",
+    "variable.global": "#9aa7d6",
     "variable.fileScope": "#9aa7d6",
     "variable.classScope": "#9aa7d6",
     "variable.declaration": "#9aa7d6",
@@ -61,6 +62,7 @@
       "name": "============== Basic =============="
     },
     {
+      "name": "Comment",
       "scope": "comment",
       "settings": {
         "foreground": "#a8abb0",
@@ -68,9 +70,39 @@
       }
     },
     {
+      "name": "Documentation",
+      "scope": [
+        "storage.type.class.doxygen",
+        "storage.type.class.jsdoc"
+      ],
+      "settings": {
+        "foreground": "#fcca73"
+      }
+    },
+    {
+      "name": "String",
       "scope": "string",
       "settings": {
         "foreground": "#66a334"
+      }
+    },
+    {
+      "name": "Numeric",
+      "scope": [
+        "constant.numeric"
+      ],
+      "settings": {
+        "foreground": "#fcf5c7"
+      }
+    },
+    {
+      "name": "Numeric",
+      "scope": [
+        "constant.numeric",
+        "keyword.other.unit.hexadecimal"
+      ],
+      "settings": {
+        "foreground": "#fcf5c7"
       }
     },
     {
@@ -82,6 +114,35 @@
       ],
       "settings": {
         "foreground": "#45c6d6"
+      }
+    },
+    {
+      "name": "Primitive",
+      "scope": [
+        "storage.type.built-in.primitive"
+      ],
+      "settings": {
+        "foreground": "#eecf22"
+      }
+    },
+    {
+      "name": "Namespace",
+      "scope": [
+        "entity.name.namespace",
+        "entity.name.scope-resolution"
+      ],
+      "settings": {
+        "foreground": "#cf6eff"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": [
+        "entity.name.type.class",
+        "entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#cf6eff"
       }
     },
     {
@@ -100,6 +161,24 @@
       ],
       "settings": {
         "foreground": "#3f9cd6"
+      }
+    },
+    {
+      "name": "Local variables",
+      "scope": [
+        "variable.other.object"
+      ],
+      "settings": {
+        "foreground": "#fcf5c7"
+      }
+    },
+    {
+      "name": "Properties",
+      "scope": [
+        "variable.other.property"
+      ],
+      "settings": {
+        "foreground": "#ff6aad"
       }
     },
     {
@@ -256,8 +335,9 @@
     {
       "name": "C++ Built-in Types",
       "scope": [
-        "storage.type.built-in.primitive.cpp",
-        "support.type.built-in.posix-reserved.cpp"
+        "support.type.built-in.posix-reserved.cpp",
+        "constant.language.false.cpp",
+        "constant.language.true.cpp"
       ],
       "settings": {
         "foreground": "#eecf22"
@@ -270,6 +350,24 @@
       ],
       "settings": {
         "foreground": "#fcf5c7"
+      }
+    },
+    {
+      "name": "C++ Types",
+      "scope": [
+        "storage.type.integral.char16_t.cpp"
+      ],
+      "settings": {
+        "foreground": "#cf6eff"
+      }
+    },
+    {
+      "name": "C++ Parameter",
+      "scope": [
+        "entity.name.type.parameter.cpp"
+      ],
+      "settings": {
+        "foreground": "#ffa348"
       }
     },
     {
@@ -731,7 +829,8 @@
         "variable.other.normal.shell",
         "string.regexp.unquoted.shell",
         "meta.scope.logical-expression.shell",
-        "variable.other.for.shell"
+        "variable.other.for.shell",
+        "constant.other.option"
       ],
       "settings": {
         "foreground": "#ffa348"
